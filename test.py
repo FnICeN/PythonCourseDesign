@@ -25,11 +25,6 @@ headers={'Host':'kns.cnki.net',
 
 url='https://kns.cnki.net/kns8/Brief/GetGridTableHtml'
 
-
-
-
-
-
 def getOnePage(getMethod,searchItem,page):
     
     dic1={"Title":"搜索方式","Name":"方式","Value":"搜索内容","Operate":"=","BlurType":""}
@@ -59,7 +54,6 @@ def getOnePage(getMethod,searchItem,page):
     'Subject': ''}
     dic['CurPage']=str(page)
     dic = parse.urlencode(dic)
-
 
     req=requests.post(headers=headers,url=url,data=dic)
     # print(req.text)
@@ -124,8 +118,6 @@ def getOnePage(getMethod,searchItem,page):
 
     res={'标题':titles,'作者':writers,'来源':sources,'日期':dates,'被引数':uses,'下载数':downloads,'详情页url':urls}
     df=pd.DataFrame(res)
-    # for a,b,c,d,e,f in zip(titles,writers,sources,dates,uses,downloads):
-    #     print(a,b,c,d,e,f)
     return df
 
 # getOnePage(0,'航天',1)

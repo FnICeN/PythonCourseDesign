@@ -45,34 +45,6 @@ class Ui_DataView(object):
         self.pushButton.setText(_translate("Form", "进行操作"))
 
 
-class Display(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.ui=Ui_DataView()
-        self.ui.setupUi(self)
-        df,bool=database.readDatabase(self,"design","root","123456","ccc")
-        self.display_dynamic_form(df,self.ui.databaseWidget)
-        self.ui.pushButton.clicked.connect(self.controlPage)
-
-    def controlPage(self):
-        pass
-
-    def display_dynamic_form(self, df, target_obj):
-
-        # horizontalHeader().setVisible
-        # .verticalHeader().setVisible
-        input_table_rows = df.shape[0]
-        input_table_colunms = df.shape[1]
-        input_table_header = df.columns.values.tolist()
-        target_obj.setColumnCount(input_table_colunms)
-        target_obj.setRowCount(input_table_rows)
-        target_obj.setHorizontalHeaderLabels(input_table_header)
-        # print(input_table_header)
-        for i in range(input_table_rows):
-            for j in range(input_table_colunms):
-                new_item = QTableWidgetItem(str(df.iat[i, j]))
-                target_obj.setItem(i, j, new_item)
-
 
 # app=QApplication([])
 # form=Display()
