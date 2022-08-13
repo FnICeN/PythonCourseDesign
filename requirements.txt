@@ -1,0 +1,41 @@
+brotlipy==0.7.0
+certifi==2021.5.30
+cffi @ file:///C:/ci/cffi_1625831763871/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+cryptography @ file:///C:/ci/cryptography_1635366724772/work
+defusedxml==0.7.1
+greenlet @ file:///C:/ci/greenlet_1628888263395/work
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata @ file:///C:/ci/importlib-metadata_1631916885413/work
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+jupyterlab-pygments==0.1.2
+lxml @ file:///C:/ci/lxml_1616443258060/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+nbclient==0.5.9
+nbconvert==6.0.7
+nbformat==5.1.3
+nest-asyncio==1.5.5
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603480701039/work
+pandas @ file:///C:/ci/pandas_1608056614942/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments==2.12.0
+PyMySQL @ file:///C:/ci/pymysql_1610464866457/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+PyQt5==5.15.6
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.9.1
+PySocks @ file:///C:/ci/pysocks_1605305839978/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz==2021.3
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+selenium==3.141.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+SQLAlchemy @ file:///C:/ci/sqlalchemy_1626948547082/work
+typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306197271/work
+wincertstore==0.2
+zipp @ file:///tmp/build/80754af9/zipp_1633618647012/work
